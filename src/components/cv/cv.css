@@ -1,0 +1,187 @@
+
+
+.print_cv {
+  margin: 0 auto 10px;
+}
+.main-wrapper.main-wrapper--top {
+  padding: 50px 0;
+} 
+.left__cv {
+  position: relative;
+  background-color: #003147;
+  padding: 20px !important;
+}
+.right__cv {
+  position: relative;
+  background-color: #fff;
+  padding: 20px !important;
+}
+.profile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.profile .profile__img {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile .profile__img img {
+  position: absolute;
+  top: -52px;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+}
+.profile h2 {
+  color: white;
+  font-size: 1.8rem;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.8rem;
+}
+.profile h2 span {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.contactInfo {
+  padding-top: 20px;
+}
+.contactInfo h3 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+.contactInfo ul {
+  position: relative;
+  padding: 0;
+}
+.contactInfo ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.contactInfo ul li:last-child {
+  margin-bottom: 0;
+}
+.contactInfo ul li .icon{
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #03a9f4;
+}
+.contactInfo ul li span {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+.contactInfo.education li {
+  margin-bottom: 15px;
+}
+.contactInfo.education h5 {
+  color: #03a9f4;
+  margin: 0;
+  font-weight: 300;
+  font-size: 1.4rem;
+  margin-bottom: 0.2rem;
+}
+.contactInfo.education h4 {
+  color: #fff;
+  margin: 0;
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+
+
+
+/* section right */
+
+.about {
+  margin-bottom: 50px;
+  border-bottom: 1px solid rgba(75, 134, 206, 0.9);
+}
+.about:last-child{
+  margin-bottom: 0;
+  border-bottom: none;
+}
+.about h2 {
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 40px 0;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.about .box { 
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+.about .box .year_company {
+  min-width: 150px;
+}
+.about .box .year_company h5 {
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+.about .box .text h4{
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #2a7da2;
+  margin: 0 0 10px 0;
+}
+.about .box .text p {
+  color: #333;
+  margin: 0;
+  font-size: 1.6rem;
+}
+.skills .box {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.skills .box h4 {
+  margin: 0;
+  text-transform: uppercase;
+  color: #848c99;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.skills .box .percent {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background-color: #f0f0f0;
+}
+.skills .box .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #03a9f4;
+  height: 100%;
+}
+.target ul {
+  padding: 0;
+}
+.target ul li {
+  font-size: 1.6rem;
+  color: #333;
+  padding-bottom: 10px;
+}

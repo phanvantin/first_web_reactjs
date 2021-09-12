@@ -1,0 +1,128 @@
+.header_notify {
+    position: absolute;
+    top: 130%;
+    z-index: 5;
+    right: 0;
+    width: 404px;
+    border: 1px solid #D3D3D3;
+    border-radius: 5px;
+    background-color: var(--white-color);
+    cursor: default;
+    /* vị trí tâm để hiện lên full */
+    transform-origin: calc(100% - 20px) top;
+    animation: headerNotifiGrowth ease-in 0.25s;
+    will-change: opacity, transform;
+    display: none;
+}
+@keyframes headerNotifiGrowth {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.notify-header_right:hover .header_notify {
+    display: block;
+}
+/* tạo ra tam giác thông báo */
+.header_notify::before {
+    content: "";    
+    border-width: 20px 26px;
+    border-style:  solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: 10px;
+    top: -30px;
+}
+/* làm cầu nối khi rê chuột */
+.header_notify::after {
+    content: "";    
+    position: absolute;
+    right: 0;
+    top: -15px;
+    width: 120px;
+    height: 15px;
+}
+.header_notify-header {
+height: 40px;
+background-color: var(--white-color);
+/* cursor: default; */
+
+}
+.header_notify-header h3{
+    color: #999;
+    margin: 0 0 0 12px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 40px;
+    User-select: none;
+}
+.header_notify-list {
+    padding-left: 0;
+    list-style: none;
+
+}
+.header_notify-item:hover {
+    background-color: #f9f9f9;
+}
+.header_notity-img {
+    width: 48px;
+    object-fit: contain;
+}
+a.header_notify-link {
+display: flex;
+text-decoration: none;
+padding-left: 12px;
+/* width: 100px; */
+}
+.header_notify-link--viewed {
+    background-color: #f8f8f8;
+
+}
+.header_notify-link--viewed:hover {
+    background-color: rgba(193,224,193,.4);
+}
+.header_notify-info {
+    margin-left: 12px;
+    padding: 3px 12px 3px 0;
+
+}
+.header_notify-name {
+    display: block;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.4rem;
+}
+.header_notify-description {
+    font-size: 1.2rem;
+    display: -webkit-box;
+    color: #756f6e;
+    line-height: 1.4rem;
+    margin-top: 2px;
+    height: 2.8rem;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+
+}
+.header_notify-footer {
+    display: flex; 
+}
+.header_notify-footer-btn {
+text-decoration: none;
+color: var(--text-color);
+/* margin: auto; sử dụng chung padding để tạo vùng chọn khi rê chuột vào */
+font-size: 1.4rem;
+font-weight: 400;
+padding: 6px 48px;
+/* dùng để chọn cả thẻ cha */
+width: 100%;
+text-align: center;
+}
+.header_notify-footer-btn:hover {
+    color: #018848;
+}

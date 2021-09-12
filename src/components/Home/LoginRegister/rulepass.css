@@ -1,0 +1,89 @@
+.password-rules li {
+  list-style: none;
+}
+.password-rules li span svg {
+  width: 12px;
+  height: 12px;
+  font-size: 12px;
+  margin-right: 6px;
+}
+.passCondition0.active, .passCondition2.active, .passCondition1.active {
+  color: #609230;
+}
+.notifiSvg {
+  width: 40px;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+.notifiSvg-show {
+  display: inline-flex;
+  width: 40px;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.auth-form__group {
+  position: relative;
+  margin-bottom: 16px;
+  
+}
+.input-group {
+  position: relative;
+}
+.auth-form__input {
+  margin-top: 0;
+  height: 40px;
+  padding: 8px 12px;
+  border: 1px solid #b3b3b3;
+  border-radius: 3px;
+  outline: none;
+  font-size: 1.4rem;
+}
+
+.auth-form__input:hover {
+  border-color: #1dbfaf;
+}
+
+.auth-form__group.invalid .auth-form__input {
+  border-color: #f33a58;
+  background-color: #fdebee;
+}
+.auth-form__group.invalid .auth-form__input:hover, .auth-form__group.invalid .auth-form__input:focus  {
+  background-color: white;
+}
+
+.auth-form__group.invalid .form-message {
+  color: #f33a58;
+}
+
+.form-message {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  padding: 4px 0 0;
+}
+
+.toggle-password {
+  font-size: 24px;
+  color: #009090;
+  cursor: pointer;
+  position: absolute; }
+  .toggle-password:hover {
+    color: #5a67d8; }

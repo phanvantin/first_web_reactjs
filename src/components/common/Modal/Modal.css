@@ -1,0 +1,135 @@
+
+.tp_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  opacity: 0;
+  display: none;
+  z-index: 10;
+  font-family: "Montserrat",Arial,Helvetica,sans-serif;
+}
+.tp_modal.show {
+  opacity: 1;
+  display: block;
+}
+.tp_modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0, 0.6);
+}
+
+body.tp-open {
+  overflow: hidden;
+}
+.tp_modal-dialog {
+  position: relative;
+}
+.tp_modal-content {
+  /* width: 324px; */
+  background-color: white;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  opacity: 0;
+  transform: translateX(-50%) scale(1.2);
+  border-radius: 3px;
+  border: 1px solid rgba(0,0,0,0.6); 
+  transition: all 0.3s linear;
+}
+.tp-open .tp_modal-content {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+.text-modal {    
+  line-height: 24px;
+  margin: 0;
+  padding: 0 18px 18px 18px;
+  border-bottom: 1px solid #f2f2f2;
+  font-size: 16px;
+}
+.modal-body {
+  margin-top: -10px;
+  max-height: 200px;
+  overflow: hidden;
+}
+
+
+/* button  */
+.btn {
+  /* color: grey; */
+  height: 34px;
+  font-size: 16px;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+}
+.btn-next {
+  color: #1dbfaf;
+}
+.footer-btn {
+  display: flex;
+  justify-content: center;
+}
+.footer-btn1 {
+  border: none;
+  height: 48px;
+  flex: 1;
+  padding: 0px;
+  background-color: white;
+  border-bottom: 1px solid #f2f2f2;
+}
+.footer-btn1:last-child {
+  border-left: 1px solid #f2f2f2;
+}
+
+
+
+
+
+
+
+
+
+
+/* svg */
+
+.dialog--err {
+  text-align: center;
+  margin: 10px auto;
+}
+
+.dialog--err-svg {
+    /* color: yellow; */
+    animation: sharkes 0.35s linear 0.3s 1;
+}
+  @keyframes sharkes {
+    0% {
+      margin-left: -5px;
+  
+    }
+    20% {   
+      margin-left: 0px;
+    }
+    40% {   
+      margin-left: 5px;
+    }
+    60% {   
+      margin-left: 0px;
+    }
+    80% {   
+      margin-left: -5px;
+    }
+    100% {   
+      margin-left: 0px;
+    }
+}

@@ -1,0 +1,37 @@
+
+.footer {
+    background-color: #fff;
+    border-top: 4px solid #018848;
+    padding-top: 10px;
+}
+.footer .support-title {
+    font-size: 14px;
+    line-height: 20px;
+    color: #464646;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.support-content {
+    padding: 0;
+}
+ul li {
+    list-style-type: none;
+}
+.footer .support-content .support-content__item a {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    font-size: 14px;
+    color: rgba(0,0,0,.65);
+}
+.footer .support-content .support-content__item a:hover {
+    color: #018848;
+}
+.footer .support-content .support-content__item a i {
+    font-size: 16px;
+    margin-right: 5px;
+}
+.fb-page {
+    margin-top: 20px;
+}
